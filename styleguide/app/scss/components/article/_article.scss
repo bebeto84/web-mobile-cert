@@ -1,0 +1,79 @@
+
+
+
+
+/*
+Article
+
+Article basic layout
+
+Markup: article.html
+
+Style guide: article
+*/
+
+article {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-column-gap: 10px;
+
+    > * {
+        grid-column: 2;
+        min-width: 0;
+    }
+
+    > figure {
+        grid-column: 1 /-1;
+        margin: 20px 0;
+    }
+
+    > .aside {
+        grid-column: 3;
+        color: #666;
+        font-size: 0.8em;
+
+    }
+    > blockquote {
+        grid-column: 1 / -1;
+        margin: 10px 0;
+        color: #666;
+        border-left: 10px solid #eee;
+        padding-left: 10px;
+    }
+
+    img {
+        width: 100%;
+    }
+    
+    .line-numbers a {
+        text-decoration: none;
+        color: #000;
+        padding-right: 1em;
+    }
+    
+    code {
+        background: #eee;
+        padding: 2px 5px;
+    }
+    
+    pre {
+        background: #eee;
+        padding: 10px 15px;
+        overflow: auto;
+    }
+    
+    pre > code {
+        padding: 0;
+    }
+    
+    figure {
+        margin: 0;
+    }
+    
+    figure figcaption {
+        color: #666;
+        font-style: italic;
+        font-size: 0.8em;
+    }
+}
+
