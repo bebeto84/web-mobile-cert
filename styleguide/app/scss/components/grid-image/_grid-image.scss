@@ -1,0 +1,48 @@
+
+/*
+Image Grid
+
+Let the grid to find the best position to place images depending on the size
+
+Markup: 
+<div class="grid-image container">
+    <div class="vertical"><img src="/images/9s9_ATCO.jpeg"/></div>
+    <div ><img src="/images/20180310155529_açores_ilha_do_pico_foto.jpg"/></div>
+    <div class="vertical"><img src="/images/636446141597011319.jpg"/></div>
+    <div class="big"><img src="/images/beautiful5.jpeg"/></div>
+    <div class="horizontal"><img src="/images/download (1).jpeg"/></div>
+    <div class="vertical"><img src="/images/download.jpeg"/></div>
+    <div class="horizontal"><img src="/images/DSC06877-X3.jpg"/></div>
+    <div class="big"><img src="/images/images (1).jpeg"/></div>
+    <div class="vertical"><img src="/images/images (2).jpeg"/></div>
+    <div class="vertical"><img src="/images/images (3).jpeg"/></div>
+    <div class=""><img src="/images/images.jpeg"/></div>
+    <div class="big"><img src="images/indonesian-island.jpg"/></div>
+
+</div>
+
+Style guide: grid-image
+*/
+
+
+.grid-image {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense;
+
+    .horizontal {
+        grid-column: span 3;
+    }
+    
+    .vertical {
+        grid-row: span 3;
+    }
+    
+    .big {
+        grid-column: span 3;
+        grid-row: span 3;
+    }
+}
+

@@ -1,0 +1,136 @@
+/*
+Type
+
+Having a nice typeface is essential.
+
+Style guide: type
+*/
+
+
+/*
+Headings
+
+All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through
+<code>.h6</code> classes are also available, for when you want to match the font styling of a heading but still want
+your text to be displayed inline.
+
+Markup:
+<h1>h1. heading <small>Secondary text</small></h1>
+<h2>h2. heading <small>Secondary text</small></h2>
+<h3>h3. heading <small>Secondary text</small></h3>
+<h4>h4. heading <small>Secondary text</small></h4>
+<h5>h5. heading <small>Secondary text</small></h5>
+<h6>h6. heading <small>Secondary text</small></h6>
+
+Weight: -10
+
+Style guide: type.headings
+*/
+
+
+/*
+Body
+
+Standard body text.
+
+Markup:
+<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p class="lead">Make a paragraph stand out by adding <code>.lead</code>.</p>
+<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+
+Weight: -5
+
+Style guide: type.body
+*/
+
+.lead { font-size: 1.2rem; }
+
+/*
+Inline Styles
+
+Use these styles to give some parts of the text a special meaning or emphasis.
+
+Markup:
+<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+<p><del>This line of text is meant to be treated as deleted text.</del></p>
+<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+<p><u>This line of text will render as underlined</u></p>
+<p><small>This line of text is meant to be treated as fine print.</small></p>
+<p><strong>rendered as bold text</strong></p>
+<p><em>rendered as italicized text</em></p>
+
+Style guide: type.inline
+*/
+
+/*
+Alignment
+
+Easily realign text to components with text alignment classes.
+
+> # Note:
+> These controls are too fine granular. Please use a more abstract element to control text flow, if possible.
+
+Markup:
+<div class="{{modifier_class}}">Lorem ipsum dolor sit amet.</div>
+
+.text-left - Left aligned text
+.text-center - Center aligned text
+.text-right - Right aligned text
+.text-justify - Justified text
+.text-nowrap - No wrap text
+
+Style guide: type.alignment
+*/
+
+.text-left {text-align: left;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.text-justify {text-align: justify;}
+.text-nowrap {white-space: nowrap;}
+
+
+/*
+Address
+
+Present contact information for the nearest ancestor or the entire body of work. Preserve formatting by ending all lines
+with <code>&lt;br&gt;</code>.
+
+Markup:
+<address>
+  <strong>Twitter, Inc.</strong><br>
+  795 Folsom Ave, Suite 600<br>
+  San Francisco, CA 94107<br>
+  <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+<address>
+  <strong>Full Name</strong><br>
+  <a href="mailto:#">first.last@example.com</a>
+</address>
+
+Weight: 5
+
+Style guide: type.address
+*/
+
+/*
+Block quotes
+
+For quoting blocks of content from another source within your document.
+
+Markup:
+<blockquote class="{{modifier_class}}">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+<blockquote class="{{modifier_class}}">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+
+.blockquote-reverse - Add <code>.blockquote-reverse</code> for a blockquote with right-aligned content.
+
+Weight: 5
+
+Style guide: type.blockquotes
+*/

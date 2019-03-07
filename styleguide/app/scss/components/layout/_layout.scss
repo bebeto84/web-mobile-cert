@@ -1,0 +1,100 @@
+/*
+Layout
+
+
+Grid based layout
+
+Markup: 
+<div class="layout container">
+    <div class="header">HEADER</div>
+    <div class="menu">MENU</div>
+    <div class="content">CONTENT</div>
+    <div class="footer">FOOTER</div>
+</div>
+
+Style guide: layout
+*/
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 200px 40px; 
+    grid-gap: 5px;
+
+    .header {
+
+        grid-column: 2 / -1;
+        /*  grid-column-start: 1;
+            grid-column-end: 3; 
+    
+            grid-column: 1 / 3;
+        
+        Yeah, you could say: "we have only 2 columns..." 
+        That´s true, but having 2 columns, make us to have 3 column lines!
+        
+        Second way to say the same: Start at 1, and span 2 columns (please)
+            grid-column: 1 /span 2;
+        
+        Third way yet: Start at 1 and in the last one line (-1)
+        Could be the best, when you change number of columns you will not have to update this prop
+            grid-column: 1 / -1;
+        */
+    }
+    .menu {
+        grid-row: 1 / span 2;
+    }
+    
+    .content {
+        grid-column: 2 /-1;
+    }
+    .footer{
+        grid-column: 1 / -1;
+    }
+}
+
+/*
+Layout Alt
+
+
+Grid based alternative layout
+
+Markup: 
+<div class="layout-alt container">
+    <div class="header">HEADER</div>
+    <div class="menu">MENU</div>
+    <div class="content">CONTENT</div>
+    <div class="footer">FOOTER</div>
+</div>
+
+Style guide: layout-alt
+*/
+
+.layout-alt {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 200px 40px;
+
+
+    .header {
+        grid-column: 1 / -3;
+    }
+
+    .menu {
+        grid-row: 1 / 4;
+        grid-column: 11 / -1
+    }
+
+    .content {
+        grid-column: 1 / -3;
+    }
+
+    .footer {
+        grid-column: 1 / -3;
+    }
+
+}
+
+
+
+

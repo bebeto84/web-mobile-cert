@@ -1,0 +1,51 @@
+#kss-node {
+  background-color: #FFF;
+
+  // remove width limitation of actual styleguide content
+  .kss-section {
+    max-width: none;
+    margin-bottom: 50px;
+    .kss-markup {
+      margin-bottom: 150px;
+    }
+  }
+
+  // limit code display
+  .kss-markup pre {
+    max-height: 500px;
+    overflow: auto;
+  }
+
+  // add more spacing to the example
+  .kss-modifier__example {
+    padding: 0 15px;
+  }
+
+  .kss-description, .kss-overview {
+    // highlight inline code
+    code {
+      padding: 2px 4px;
+      font-size: 90%;
+      color: #e74c3c;
+      background-color: #f9f2f4;
+      border-radius: 4px;
+    }
+
+    // improve blockquote used as hint
+    blockquote {
+      margin: 12px 0 24px 0;
+      border: 1px solid #eee;
+      border-left-color: #3498db;
+      border-left-width: 5px;
+      border-radius: 3px;
+
+      h1,h2,h3,h4,h5,h6 {
+        font-size: 125%;
+        margin: 6px 0;
+      }
+      p {
+        margin: 6px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+
+/*
+Grid
+
+Grid based layout
+
+Markup: grid.html
+
+Style guide: grid
+*/
+
+.grid-container {
+    display: grid;
+    grid-template: repeat(2, 100px) / repeat(3, 1fr);
+
+   /*  grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 100px); */
+    grid-gap: 5px;
+}
